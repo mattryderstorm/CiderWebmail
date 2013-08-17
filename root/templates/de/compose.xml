@@ -11,7 +11,7 @@
                 <h1>Neue E-Mail schreiben</h1>
             </div>
             <div id="container">
-                <form enctype="multipart/form-data" method="post" id="compose_form" tal:attributes="action uri_send">
+                <form enctype="multipart/form-data" tal:attributes="action uri_send" id="compose_form" method="post">
                     <fieldset>
                         <legend>Message</legend>
                         <input tal:condition="true: forward" name="forward" tal:attributes="value string:${forward/root_message/uid}/${forward/part_id}" type="hidden" />
